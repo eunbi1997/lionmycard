@@ -51,7 +51,7 @@
           <div class="card-body">
             <p class="card_name">{{product.card_name}}</p>
             <p class="card-title">{{product.title}}</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+            <a href="{%url 'board_detail' product.id%}" class="btn btn-primary">Read More &rarr;</a>
           </div>
           <div class="card-footer text-muted">
             Posted on {{product.pub_date}}
