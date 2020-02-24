@@ -1,1 +1,1 @@
-web: gunicorn card.wsgi --log-file -
+web: gunicorn lioncard.wsgi --log-file -
