@@ -46,7 +46,7 @@
       <div class="col-md-12">
 
         <!-- Blog Post -->
-        {% for product in products %}
+        {% for product in products.all %}
         <div class="card mb-4">
           <div class="card-body">
             <h2 class="card-title">{{product.title}}</h2>
@@ -57,15 +57,16 @@
           <div class="card-footer text-muted">
             Posted on {{product.pub_date}}
           </div>
-
-          {%empty%}
-          <br>
-          <center>
-            <p class="none_result"> "검색 결과가 없습니다."</p>
-          </center>
-          {%endfor%}
-
         </div>
+
+        {%empty%}
+        <br>
+        <center>
+          <p class="none_result"> "검색 결과가 없습니다."</p>
+        </center>
+
+        {%endfor%}
+
 
       </div>
 
