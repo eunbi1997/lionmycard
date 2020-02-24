@@ -88,7 +88,7 @@ def card_result(request):
         if(price=='300000'):
             if(vs=='영화 할인률'):
                 cards= Card.objects.filter(card_sort = '신용카드',card_price_min='300000').order_by('-card_movie')
-                name=card_movie
+                
             elif(vs=='bus'):
                 cards=Card.objects.filter(card_sort = '신용카드',card_price_min='300000').order_by('-card_bus')   
             elif(vs=='coffee'):
